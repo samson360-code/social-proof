@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Poppins:ital,wght@0,700;1,700&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <title>Frontend Mentor | Social proof section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      margin-block: 2rem;
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    :root {
+      ---Very-Dark-Magenta: hsl(300, 43%, 22%);
+      ---Soft-Pink: hsl(333, 80%, 67%);
+      ---Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+      ---Light-Grayish-Magenta: hsl(300, 24%, 96%);
+      ---White: hsl(0, 0%, 100%);
+    }
+
+    body {
+      font-family: 'League Spartan', sans-serif;
+      font-size: 15px;
+      margin: 0;
+    }
+p{
+  font-size: 1.1rem;
+  line-height: 1.2rem;
+}
+    section {
+      padding-inline: 1rem;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .stars>* {
+      margin-block: 1rem;
+      background-color: var(---Light-Grayish-Magenta);
+      padding-block: 1rem;
+      border-radius: 1rem;
+      width: 100%;
+    }
+
+    .comment {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      color: var(---White);
+
+    }
+
+    .comment>* {
+      background-color: var(---Very-Dark-Magenta);
+      padding: 1rem;
+      border-radius: 1rem;
+
+    }
+
+    .comment img {
+      border-radius: 50%;
+    }
+
+    .comment>div>div {
+      display: flex;
+      gap: 1.4rem;
+    }
+
+    .comment h5 {
+      margin-bottom: 0%;
+    }
+
+    .comment h6 {
+      color: var(---Soft-Pink);
+      margin-top: 0;
+    }
+    .star-container {
+      display: flex;
+      justify-content: center;
+    }
+    .star {
+      width: 20px;
+      height: 20px;
+      background-color: yellow;
+      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+      margin-right: 10px;
+    }
+    @media (min-width:600px) {
+      body {
+        font-size: 25px;
+      }
+
+      @media (min-width:1030px) {
+        body {
+          font-size: 20px;
+        }
+
+        p {
+          line-height: 1.3rem;
+
+        }
+
+        section {
+          padding-inline: 5rem;
+        }
+
+        .comment,
+        .wrapper {
+          flex-direction: row;
+          margin-block: 1.5rem;
+        }
+
+        .wrapper {
+          gap: 12REM;
+          align-items: center;
+
+        }
+
+        .wrapper h1 {
+          font-size: 3.5rem;
+        }
+
+        .wrapper>* {
+          flex: 1;
+        }
+
+        .wrapper>div:first-child {
+          text-align: left;
+          flex: 0.7;
+          color: var(---Very-Dark-Magenta);
+
+        }
+        .stars>div {
+          width: 70%;
+          padding-inline:1rem ;
+        }
+
+        .stars>div:nth-child(2) {
+          margin-left: 10%;
+        }
+
+        .stars>div:nth-child(3) {
+          margin-left: 20%;
+        }
+
+        .comment>div:nth-child(2) {
+          margin-top: 3%;
+        }
+
+        .comment>div:nth-child(3) {
+          margin-top: 6%;
+        }
+
+        .stars>div {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+   
+  </style>
+</head>
+
+<body>
+  <section>
+    <div class="wrapper">
+      <div>
+        <h1> 10,000+ of our users love our products.</h1>
+        <p>
+          We only provide great products combined with excellent customer service.
+          See what our satisfied customers are saying about our services.
+        </p>
+      </div>
+      <div class="stars">
+        <div>
+          <div class="star-container">
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+          </div>
+          <p> Rated 5 Stars in Reviews
+          </p>
+        </div>
+        <div>
+          <div class="star-container">
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+          </div>
+
+          <p> Rated 5 Stars in Report Guru
+          </p>
+        </div>
+        <div>
+          <div class="star-container">
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+          </div>
+          <p> Rated 5 Stars in BestTech
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="comment">
+      <div>
+        <div>
+          <img src="./images/image-colton.jpg" alt="">
+          <span>
+            <h5>
+              Colton Smith
+            </h5>
+            <h6>
+              Verified Buyer
+            </h6>
+          </span>
+        </div>
+
+
+        <p>
+          "We needed the same printed design as the one we had ordered a week prior.
+          Not only did they find the original order, but we also received it in time.
+          Excellent!"
+        </p>
+      </div>
+      <div>
+        <div>
+          <img src="./images/image-irene.jpg" alt="">
+          <span>
+            <h5>
+              Irene Roberts
+            </h5>
+            <h6>
+              Verified Buyer
+            </h6>
+          </span>
+        </div>
+
+        <p>
+          "Customer service is always excellent and very quick turn around. Completely
+          delighted with the simplicity of the purchase and the speed of delivery."
+        </p>
+      </div>
+      <div>
+        <div>
+          <img src="./images/image-anne.jpg" alt="">
+          <span>
+            <h5>
+              Anne Wallace
+            </h5>
+            <h6>
+              Verified Buyer
+            </h6>
+          </span>
+        </div>
+
+        <p>
+          "Put an order with this company and can only praise them for the very high
+          standard. Will definitely use them again and recommend them to everyone!"
+        </p>
+      </div>
+
+    </div>
+
+
+
+  </section>
+
+
+
+
+  <footer>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+        href="#">samson mamuye</a>.
+    </div>
+  </footer>
+
+</body>
+
+</html>
